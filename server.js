@@ -8,7 +8,7 @@ app.set("view engine","ejs");
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
 
-mongoose.connect("mongodb+srv://arunku9050:zsgXK66fy4Hk75Nu@cluster0.jsl0dve.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb://127.0.0.1:27017/todo")
     .then(()=>console.log("MOngoDB CONNECTED"))
     .catch(err=> console.log(err));
 
